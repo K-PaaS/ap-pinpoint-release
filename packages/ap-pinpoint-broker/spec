@@ -1,0 +1,7 @@
+---
+name: ap-pinpoint-broker
+
+dependencies:
+- java
+files:
+- ap-pinpoint-broker/ap-pinpoint-broker.jar

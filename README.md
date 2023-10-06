@@ -70,12 +70,12 @@
   
 
 
-## PAAS-TA-PINPOINT-RELEASE
+## ap-pinpoint-release
 
 ## src file download
 ```
-$ cd PAAS-TA-PINPOINT-RELEASE
-$ wget -O src.zip https://nextcloud.paas-ta.org/index.php/s/J3FErQeysMKp8QP/download
+$ cd ap-pinpoint-release
+$ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/d5X3RxtonWxrBeD/download
 $ unzip src.zip
 ```
 
@@ -90,6 +90,6 @@ $ unzip src.zip
 >`sh create.sh`
 
 ## Contributors ✨
-<a href="https://github.com/PaaS-TA/PAAS-TA-PINPOINT-RELEASE/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=PaaS-TA/PAAS-TA-PINPOINT-RELEASE" />
+<a href="https://github.com/K-PaaS/ap-pinpoint-release/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=K-PaaS/ap-pinpoint-release" />
 </a>

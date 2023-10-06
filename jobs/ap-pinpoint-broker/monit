@@ -1,0 +1,5 @@
+check process ap-pinpoint-broker
+  with pidfile /var/vcap/sys/run/ap-pinpoint-broker/ap-pinpoint-broker.pid
+  start program "/var/vcap/jobs/ap-pinpoint-broker/bin/monit_debugger broker_ctl '/var/vcap/jobs/ap-pinpoint-broker/bin/broker_ctl start'"
+  stop program "/var/vcap/jobs/ap-pinpoint-broker/bin/monit_debugger broker_ctl '/var/vcap/jobs/ap-pinpoint-broker/bin/broker_ctl stop'"
+  group vcap
