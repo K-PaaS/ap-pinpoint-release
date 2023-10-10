@@ -4,8 +4,8 @@ set -e # exit immediately if a simple command exits with a non-zero status
 set -u # report the usage of uninitialized variables
 
 # Setup env vars and folders for the webapp_ctl script
-export JOB_NAME='broker'
-source /var/vcap/jobs/broker/helpers/ctl_setup.sh $JOB_NAME
+export JOB_NAME='ap-pinpoint-broker'
+source /var/vcap/jobs/ap-pinpoint-broker/helpers/ctl_setup.sh $JOB_NAME
 
 export PORT=${PORT:-5000}
 export LANG=en_US.UTF-8
@@ -19,7 +19,7 @@ case $1 in
     export PKG_DIR=/var/vcap/packages/$JOB_NAME
     
     cd $JOB_DIR
-    exec java -cp "${PKG_DIR}/openpaas-service-java-broker-pinpoint.jar:/var/vcap/jobs/broker/config" org.springframework.boot.loader.JarLauncher\
+    exec java -cp "${PKG_DIR}/ap-pinpoint-broker.jar:/var/vcap/jobs/ap-pinpoint-broker/config" org.springframework.boot.loader.JarLauncher\
          --spring.config.name=$JOB_NAME \
          >>$LOG_DIR/$JOB_NAME.stdout.log \
          2>>$LOG_DIR/$JOB_NAME.stderr.log &

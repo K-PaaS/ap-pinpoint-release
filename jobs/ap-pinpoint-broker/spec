@@ -1,7 +1,7 @@
 ---
-name: broker
+name: ap-pinpoint-broker
 packages:
-  - broker
+  - ap-pinpoint-broker
   - java
 templates:
   bin/broker_ctl: bin/broker_ctl
