@@ -8,7 +8,7 @@
 ## src file download
 ```
 $ cd ap-pinpoint-release
-$ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/ArjnNcYo7z34TQQ/download
+$ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/mDKkpqTPxeE3ScZ/download
 $ unzip src.zip
 ```
 
